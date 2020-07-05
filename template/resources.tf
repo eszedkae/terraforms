@@ -3,15 +3,11 @@
 ##################################################
 
 provider "aws" {
-    profile =                 "${var.profile}"
+    profile =                 var.profile
     shared_credentials_file = "~/.aws/credentials"
-    region =                  "${var.aws_region}"
+    region =                  var.aws_region
 }
 
-
-
-
-
 ##################################################
-## Elastic Beanstalk config
+## <Module_Name> config
 ##################################################
