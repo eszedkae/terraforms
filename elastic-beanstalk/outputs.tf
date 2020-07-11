@@ -19,4 +19,3 @@ output "instances" {
 output "load_balancers" {
     value = module.elastic_beanstalk_environment.load_balancers
 }
-
